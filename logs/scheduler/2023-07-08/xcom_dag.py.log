@@ -8321,3 +8321,31 @@ Traceback (most recent call last):
 NameError: name '_branch' is not defined
 [2023-07-08T14:17:19.595+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/xcom_dag.py
 [2023-07-08T14:17:19.613+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/xcom_dag.py took 0.036 seconds
+[2023-07-08T14:17:50.401+0000] {processor.py:154} INFO - Started process (PID=13896) to work on /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:17:50.402+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/xcom_dag.py for tasks to queue
+[2023-07-08T14:17:50.403+0000] {logging_mixin.py:120} INFO - [2023-07-08T14:17:50.402+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:17:50.413+0000] {logging_mixin.py:120} INFO - [2023-07-08T14:17:50.412+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/xcom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/xcom_dag.py", line 24, in <module>
+    python_callable=_branch
+NameError: name '_branch' is not defined
+[2023-07-08T14:17:50.414+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:17:50.433+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/xcom_dag.py took 0.035 seconds
+[2023-07-08T14:18:21.290+0000] {processor.py:154} INFO - Started process (PID=13933) to work on /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:18:21.292+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/xcom_dag.py for tasks to queue
+[2023-07-08T14:18:21.292+0000] {logging_mixin.py:120} INFO - [2023-07-08T14:18:21.292+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:18:21.306+0000] {logging_mixin.py:120} INFO - [2023-07-08T14:18:21.305+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/xcom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/xcom_dag.py", line 24, in <module>
+    python_callable=_branch
+NameError: name '_branch' is not defined
+[2023-07-08T14:18:21.307+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/xcom_dag.py
+[2023-07-08T14:18:21.324+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/xcom_dag.py took 0.037 seconds
